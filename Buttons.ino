@@ -45,8 +45,8 @@ void updateButtons() {
   }
 }
 
-void checkButtons() {
-  if (turnOnTimer) {
+void checkButtons() {       //CALLED ABOVE
+  if (turnOnTimer) {        //CHECK WHAT THE EXACT TIME WAS WHEN THE BUTTON WAS PRESSED
     startTimer = millis();
   }
 }
