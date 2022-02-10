@@ -3,8 +3,6 @@
 long sleepTimer = 0;
 long sleepInterval = 7000;
 
-boolean fiveLight;
-
 void fallAsleep() {
   if (millis() - sleepTimer > sleepInterval) {
     strip.clear(); strip.show();  // Clear out NeoPixel Display
