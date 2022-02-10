@@ -47,7 +47,6 @@ uint32_t yellowGreen = strip.Color(190,255,0); //yellow green
 uint32_t green = strip.Color(0, 200, 0); //green
 uint32_t lightBlue = strip.Color(0, 255, 255); //light blue
 uint32_t blue = strip.Color(0, 0, 255); //blue
-//uint32_t bluePurple = strip.Color(0, 69, 200); //blue purple
 uint32_t purple = strip.Color(120, 0, 255); //purple
 uint32_t pink = strip.Color(255, 0, 120); //pink
 
@@ -64,7 +63,6 @@ void loop() {
   updateTime();
   updateButtons();
   checkButtons();
-//  setTime();
   
   switch (mode) {
     case -1: fallAsleep(); break;
