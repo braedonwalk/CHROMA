@@ -1,6 +1,7 @@
 // NeoPixel Functions
 
-void initNeopixels(){
+//Initialize Neopixels
+void initNeopixels(){ 
   strip.begin();
   strip.clear();
   strip.show();
@@ -57,16 +58,4 @@ void rainbow(int wait) {
   strip.clear();
   strip.show();
   mode = -1;        //GO BACK TO SLEEP
-}
-
-/////////////////////////////////
-//TEST CODE
-/////////////////////////////////
-
-void allNeopixels(int c){
-  for (int i = 0; i < strip.numPixels(); i++){
-    strip.setPixelColor(i, Wheel(c));
-  }
-  strip.show();
-  mode = -1;
 }
